@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MrJunaidKanthDashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    iframe { border: none; width: 100%; height: 100%; display: block; }
+  </style>
+</head>
+<body>
+
+  <iframe 
+    id="app-frame"
+    src="https://script.google.com/macros/s/AKfycbwQ2uH0N7xJPDUqUlsd8rEkWdk_M74nSI0rKgEpCA_QToUIbyvLig8UBRjVPW07JJHAtw/exec"
+    allow="geolocation; microphone; camera"
+    sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+       var iframe = document.getElementById('app-frame');
+       if(iframe) { iframe.focus(); }
+    };
+  </script>
+
+</body>
+</html>
