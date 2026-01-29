@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MAP</title>
+  <title>Formulaic Secure MAP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fix favicon error -->
+  <!-- Favicon error fix -->
   <link rel="icon" href="data:,">
 
   <style>
@@ -14,24 +14,49 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Arial;
-      background: #0f172a;
-    }
-    a {
-      padding: 20px 40px;
-      background: #22c55e;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
-      text-decoration: none;
-      font-size: 20px;
-      border-radius: 8px;
+      text-align: center;
     }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+      max-width: 400px;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      background: #0d6efd;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover { background: #084298; }
   </style>
 </head>
 <body>
 
-<a href="https://script.google.com/macros/s/AKfycbwQ2uH0N7xJPDUqUlsd8rEkWdk_M74nSI0rKgEpCA_QToUIbyvLig8UBRjVPW07JJHAtw/exec" target="_blank">
-  Open Map
-</a>
+<div class="card">
+  <h2>🔐 Secure Map</h2>
+  <p>Formulaic Engineers Pvt Ltd</p>
+  <button onclick="openApp()">Launch System</button>
+</div>
+
+<script>
+function openApp() {
+  window.location.href = "https://script.google.com/macros/s/AKfycbwQ2uH0N7xJPDUqUlsd8rEkWdk_M74nSI0rKgEpCA_QToUIbyvLig8UBRjVPW07JJHAtw/exec";
+}
+</script>
 
 </body>
 </html>
