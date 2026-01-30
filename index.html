@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Formulaic Secure MAP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaic Secure Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 
-  <!-- Favicon error fix -->
-  <link rel="icon" href="data:,">
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      text-align: center;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      backdrop-filter: blur(10px);
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
-      max-width: 400px;
-    }
-
-    button {
-      margin-top: 25px;
-      padding: 14px 28px;
-      font-size: 18px;
-      border-radius: 8px;
-      border: none;
-      background: #0d6efd;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover { background: #084298; }
-  </style>
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-
-<div class="card">
-  <h2>🔐 Secure Map</h2>
-  <p>Formulaic Engineers Pvt Ltd</p>
-  <button onclick="openApp()">Launch System</button>
-</div>
-
-<script>
-function openApp() {
-  window.location.href = "https://script.google.com/macros/s/AKfycbwQ2uH0N7xJPDUqUlsd8rEkWdk_M74nSI0rKgEpCA_QToUIbyvLig8UBRjVPW07JJHAtw/exec";
-}
-</script>
-
+    <iframe id="app-frame"
+        src="https://script.google.com/macros/s/AKfycbwUW6UE6wi2T2Qn08S-vxm0RMC0Tn9AadGxM9d0Zh-ylLHudLgeVW_Br3Q_ZWyb4IyJ7g/exec"
+        allow="geolocation; microphone; camera"
+        sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
 </body>
+
 </html>
